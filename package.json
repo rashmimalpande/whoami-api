@@ -9,6 +9,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "request": "^2.79.0",
+    "useragent": "^2.1.12",
+    "yamlparser": "0.0.2"
   }
 }
