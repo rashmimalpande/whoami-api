@@ -1,8 +1,10 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+app.enable("trust proxy");
+
+app.get('/api/whoami', function (req, res) {
+  res.json({"ipaddress": req.ip});
 });
 
 app.listen(process.env.PORT || 8080);
